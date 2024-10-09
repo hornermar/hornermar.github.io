@@ -3,34 +3,51 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>Markéta Hájková</title>
   </head>
-  <!-- Google Tag Manager -->
-  <script>
-    (function (w, d, s, l, i) {
-      w[l] = w[l] || [];
-      w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
-      var f = d.getElementsByTagName(s)[0],
-        j = d.createElement(s),
-        dl = l != "dataLayer" ? "&l=" + l : "";
-      j.async = true;
-      j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
-      f.parentNode.insertBefore(j, f);
-    })(window, document, "script", "dataLayer", "GTM-5HTJJMDB");
-  </script>
-  <!-- End Google Tag Manager -->
   <body>
-    <!-- Google Tag Manager (noscript) -->
-    <noscript
-      ><iframe
-        src="https://www.googletagmanager.com/ns.html?id=GTM-5HTJJMDB"
-        height="0"
-        width="0"
-        style="display: none; visibility: hidden"
-      ></iframe
-    ></noscript>
-    <!-- End Google Tag Manager (noscript) -->
-    😶
+    <header>
+      <h1>Markéta Hájková</h1>
+
+      <p>
+        Mám
+        <a href="https://www.instagram.com/marketa_hajek" target="_blank"
+          >Instagram</a
+        >, <a href="mailto:hornerova.m@gmail.com">Email</a> ...
+      </p>
+    </header>
+
+    <div class="container">
+      <a href="/vymaz-si-pamatku">
+        <div class="project">
+          <div class="project__image">
+            <img src="./vymaz-si-pamatku-banner.png" alt="Vymaž si památku" />
+          </div>
+          <div class="project__text">
+            <h3>Vymaž si památku</h3>
+            <p>
+              Užij si bourání památek. Aspoň na chvilku! Aktuálně dostupný
+              železniční most a Chemapol.
+            </p>
+          </div>
+        </div>
+      </a>
+
+      <a href="https://system-sykora.netlify.app/">
+        <div class="project">
+          <div class="project__image">
+            <img src="./system-sykora-banner.png" alt="System Sykora" />
+          </div>
+          <div class="project__text">
+            <h3>Systém Sýkora</h3>
+            <p><i>(In progress)</p></i>
+            <p>...</p>
+            <p>Vyzkoušej si algoritmus Zdeňka Sýkory a zjisti, jak funguje.</p>
+          </div>
+        </div>
+      </a>
+    </div>
 
     <!-- Google tag (gtag.js) -->
     <script
