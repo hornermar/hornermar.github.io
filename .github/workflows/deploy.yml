@@ -1,13 +1,14 @@
 name: Deploy
 
 on:
-push:
-branches: - main
+  push:
+    branches:
+      - main
 
 jobs:
-build:
-name: Build
-runs-on: ubuntu-latest
+  build:
+    name: Build
+    runs-on: ubuntu-latest
 
     steps:
       - name: Checkout repo
@@ -28,11 +29,11 @@ runs-on: ubuntu-latest
           name: production-files
           path: ./dist
 
-deploy:
-name: Deploy
-needs: build
-runs-on: ubuntu-latest
-if: github.ref == 'refs/heads/main'
+  deploy:
+    name: Deploy
+    needs: build
+    runs-on: ubuntu-latest
+    if: github.ref == 'refs/heads/main'
 
     steps:
       - name: Download artifact
