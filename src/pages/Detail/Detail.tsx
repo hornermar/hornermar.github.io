@@ -21,7 +21,7 @@ DetailProps) => {
 
       <div className="detail__text">
         <h2>{title}</h2>
-        <Link to={`/${code}`} className="online">
+        <Link to={`./${code}`} className="online">
           <i>Online tady!</i>
         </Link>
 
