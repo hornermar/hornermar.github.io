@@ -1,0 +1,16 @@
+.detail {
+  display: flex;
+  width: 100%;
+  gap: 20px;
+  flex-flow: row wrap;
+}
+
+.detail__image img {
+  width: 100%;
+  height: auto;
+}
+
+.detail__text .online {
+  font-size: 30px;
+  font-weight: 500;
+}

@@ -1,67 +1,13 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <title>Markéta Hájková</title>
+    <title>Vite + React + TS</title>
   </head>
   <body>
-    <header>
-      <h1>Markéta Hájková</h1>
-
-      <p>
-        Mám
-        <a href="https://www.instagram.com/marketa_hajek" target="_blank"
-          >Instagram</a
-        >, <a href="mailto:hornerova.m@gmail.com">Email</a> ...
-      </p>
-    </header>
-
-    <div class="container">
-      <a href="/vymaz-si-pamatku">
-        <div class="project">
-          <div class="project__image">
-            <img src="./vymaz-si-pamatku-banner.png" alt="Vymaž si památku" />
-          </div>
-          <div class="project__text">
-            <h3>Vymaž si památku</h3>
-            <p>
-              Užij si bourání památek. Aspoň na chvilku! Aktuálně dostupný
-              železniční most a Chemapol.
-            </p>
-          </div>
-        </div>
-      </a>
-
-      <a href="https://system-sykora.netlify.app/">
-        <div class="project">
-          <div class="project__image">
-            <img src="./system-sykora-banner.png" alt="System Sykora" />
-          </div>
-          <div class="project__text">
-            <h3>Systém Sýkora</h3>
-            <p><i>(In progress)</p></i>
-            <p>...</p>
-            <p>Vyzkoušej si algoritmus Zdeňka Sýkory a zjisti, jak funguje.</p>
-          </div>
-        </div>
-      </a>
-    </div>
-
-    <!-- Google tag (gtag.js) -->
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=G-J5LM9ZLJJ8"
-    ></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag("js", new Date());
-
-      gtag("config", "G-J5LM9ZLJJ8");
-    </script>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>

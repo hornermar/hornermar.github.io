@@ -1,0 +1,30 @@
+.projects {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.project {
+  display: flex;
+  width: 100%;
+  gap: 20px;
+  flex-flow: row wrap;
+}
+
+.project__image {
+  flex: 1 1 25%;
+}
+
+.project__image img {
+  width: 100%;
+  height: auto;
+}
+
+.project__text {
+  flex: 1 1 70%;
+}
+
+.project h3 {
+  margin: 0;
+}
