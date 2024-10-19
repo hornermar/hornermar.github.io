@@ -13,7 +13,7 @@ export const Detail = ({
   technology,
   url,
 }: DetailProps) => {
-  const linkOnline = url ? url : code;
+  const linkOnline = url ? url : `/${code}/index.html`;
 
   return (
     <div className="detail">
@@ -35,7 +35,9 @@ export const Detail = ({
         <h3>Dokumentace</h3>
         <ul>
           <li>
-            <Link to={`https://github.com/hornermar/${code}`}>Zdrojvý kód</Link>
+            <Link to={`https://github.com/hornermar/${code}`}>
+              Zdrojový kód
+            </Link>
           </li>
           ...
         </ul>

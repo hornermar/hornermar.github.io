@@ -17,13 +17,11 @@ function App() {
         <Route path="/projekty" element={<Projects />} />
 
         {map(projects, (project) => (
-          <>
-            <Route
-              key={project.code}
-              path={`${project.code}/info`}
-              element={<Detail {...project} />}
-            />
-          </>
+          <Route
+            key={project.code}
+            path={`${project.code}/info`}
+            element={<Detail {...project} />}
+          />
         ))}
       </Routes>
     </Router>
