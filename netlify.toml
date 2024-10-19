@@ -1,3 +1,11 @@
+[build]
+  submodules = true
+
+[[redirects]]
+  from = "/vymaz-si-pamatku"
+  to = "/vympaz-si-pamatku/index.html"
+  status = 301
+
 [[redirects]]
   from = "/*"
   to = "/index.html"
