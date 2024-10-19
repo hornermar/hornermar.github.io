@@ -1,7 +1,12 @@
-[build]
-  submodules = true
+[context.production.environment]
+  GIT_SUBMODULES = "true"
   
 [[redirects]]
   from = "/vymaz-si-mapatku"
   to = "/vymaz-si-pamatku/index.html"
   status = 301
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
