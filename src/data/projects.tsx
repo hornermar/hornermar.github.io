@@ -23,5 +23,6 @@ export const projects: ProjectType[] = [
     description: "Vyzkoušej si algoritmus Zdeňka Sýkory a zjisti, jak funguje.",
     image: systemSykoraImage,
     note: "(In Progress)",
+    url: "https://system-sykora.netlify.app",
   },
 ];

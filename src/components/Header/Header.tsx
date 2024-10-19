@@ -2,12 +2,12 @@ import { NavLink, useLocation } from "react-router-dom";
 import { map } from "lodash";
 import "./Header.css";
 
-const Separator = () => <span>,</span>;
+const Separator = () => <span>.</span>;
 
 const links = [
   { to: "/", label: "Markéta Hájková" },
-  { to: "/o-mne", label: "O mně" },
-  { to: "/projekty", label: "Projekty" },
+  // { to: "/o-mne", label: "O mně" },
+  // { to: "/projekty", label: "Projekty" },
 ];
 
 export const Header = () => {

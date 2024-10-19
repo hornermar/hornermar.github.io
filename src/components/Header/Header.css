@@ -2,7 +2,7 @@ header {
   position: sticky;
   top: 0;
   padding: 20px 0 20px;
-  background-color: #fad0c9ff;
+  background-color: #b1d1f1;
 }
 
 .nav {
@@ -26,6 +26,7 @@ header a {
 
 header span {
   padding-right: 10px;
+  font-size: 35px;
 }
 
 .active-link,

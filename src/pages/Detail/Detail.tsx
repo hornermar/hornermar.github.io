@@ -11,8 +11,10 @@ export const Detail = ({
   code,
   why,
   technology,
-}: // press,
-DetailProps) => {
+  url,
+}: DetailProps) => {
+  const linkOnline = url ? url : code;
+
   return (
     <div className="detail">
       <div className="detail__image">
@@ -21,10 +23,9 @@ DetailProps) => {
 
       <div className="detail__text">
         <h2>{title}</h2>
-        <Link to={`./${code}`} className="online">
+        <Link to={linkOnline} reloadDocument className="online">
           <i>Online tady!</i>
         </Link>
-
         <h3>Popis</h3>
         <p>{description}</p>
         <p>{why}</p>
@@ -36,6 +37,7 @@ DetailProps) => {
           <li>
             <Link to={`https://github.com/hornermar/${code}`}>Zdrojvý kód</Link>
           </li>
+          ...
         </ul>
       </div>
     </div>

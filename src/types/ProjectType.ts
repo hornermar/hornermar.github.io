@@ -9,4 +9,5 @@ export type ProjectType = {
   press?: string;
   technology?: ReactNode;
   note?: string;
+  url?: string;
 };

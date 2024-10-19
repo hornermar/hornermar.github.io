@@ -1,5 +1,4 @@
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import "./App.css";
 import { Header } from "./components/Header/Header";
 import { About } from "./pages/About/About";
 import { Home } from "./pages/Home/Home";
@@ -18,11 +17,13 @@ function App() {
         <Route path="/projekty" element={<Projects />} />
 
         {map(projects, (project) => (
-          <Route
-            key={project.code}
-            path={`/projekty/${project.code}`}
-            element={<Detail {...project} />}
-          />
+          <>
+            <Route
+              key={project.code}
+              path={`${project.code}/info`}
+              element={<Detail {...project} />}
+            />
+          </>
         ))}
       </Routes>
     </Router>

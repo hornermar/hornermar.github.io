@@ -10,19 +10,21 @@ type ProjectProps = {
   description: string;
   image: string;
   note?: string;
+  url?: string;
 };
 
 const Project = ({ code, title, description, image, note }: ProjectProps) => {
+  const linkTo = `${code}/info`;
   return (
     <div className="project">
       <div className="project__image">
-        <Link to={`/projekty/${code}`}>
+        <Link to={linkTo}>
           <img src={image} alt={title} />
         </Link>
       </div>
       <div className="project__text">
         <h3>
-          <Link to={`/projekty/${code}`}>{title}</Link>
+          <Link to={linkTo}>{title}</Link>
         </h3>
         {note && (
           <span>
