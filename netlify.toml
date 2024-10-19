@@ -1,3 +1,6 @@
+[build]
+  submodules = true
+  
 [[redirects]]
   from = "/vymaz-si-mapatku"
   to = "/vymaz-si-pamatku/index.html"
