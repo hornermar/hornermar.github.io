@@ -1,3 +1,10 @@
+[build]
+  command = "npm run build"
+  publish = "dist"
+
+[context.production.environment]
+  GIT_SUBMODULES = "true"
+
 [context.production.environment]
   GIT_SUBMODULES = "true"
 
@@ -6,3 +13,7 @@
   to = "/vymaz-si-pamatku/index.html"
   status = 301
 
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
