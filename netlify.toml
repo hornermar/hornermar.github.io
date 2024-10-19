@@ -1,7 +1,0 @@
-[build]
-  submodules = true
-
-[[redirects]]
-  from = "/*"
-  to = "/index.html"
-  status = 200
