@@ -1,18 +1,19 @@
 import { Link } from "react-router-dom";
-import { ProjectType } from "../../types/ProjectType";
+import { projects } from "../../data/projects";
+import { useParams } from "react-router-dom";
 import "./Detail.css";
+import { find } from "lodash";
+import { DetailNotFound } from "./DetailNotFound";
 
-type DetailProps = ProjectType;
+export const Detail = () => {
+  const { project } = useParams<{ project: string }>();
 
-export const Detail = ({
-  title,
-  description,
-  image,
-  code,
-  why,
-  technology,
-  url,
-}: DetailProps) => {
+  const detailData = find(projects, { code: project });
+
+  if (!detailData) return <DetailNotFound />;
+
+  const { code, title, description, why, technology, image, url } = detailData;
+
   const linkOnline = url ? url : `/${code}/index.html`;
 
   return (
