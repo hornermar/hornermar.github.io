@@ -1,8 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap");
 
 :root {
-  min-height: 100vh;
-  background-image: linear-gradient(to top, #dce1f8 0%, white 90%);
+  background-color: #dce1f8;
 }
 
 body {

@@ -16,6 +16,7 @@ export const projects: ProjectType[] = [
       </>
     ),
     image: vymazSiPamatkuImage,
+    url: "/vymaz-si-pamatku/index.html",
   },
   {
     code: "system-sykora",

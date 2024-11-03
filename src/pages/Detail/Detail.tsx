@@ -12,9 +12,9 @@ export const Detail = () => {
 
   if (!detailData) return <DetailNotFound />;
 
-  const { code, title, description, why, technology, image } = detailData;
+  const { code, title, description, why, technology, image, url } = detailData;
 
-  const linkOnline = `https://${code}.marketahajek.cz`;
+  const linkOnline = url ? url : `https://${code}.marketahajek.cz`;
 
   return (
     <div className="detail">
