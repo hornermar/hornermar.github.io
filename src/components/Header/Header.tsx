@@ -2,7 +2,7 @@ import { NavLink, useLocation } from "react-router-dom";
 import { map } from "lodash";
 import "./Header.css";
 
-const Separator = () => <span>.</span>;
+const Separator = () => <span></span>;
 
 const links = [
   { to: "/", label: "Markéta Hájková" },

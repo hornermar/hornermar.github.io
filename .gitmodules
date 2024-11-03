@@ -1,6 +1,0 @@
-[submodule "vymaz-si-pamatku"]
-	path = vymaz-si-pamatku
-	url = https://github.com/hornermar/vymaz-si-pamatku.git
-[submodule "system-sykora"]
-	path = system-sykora
-	url = https://github.com/hornermar/system-sykora.git
