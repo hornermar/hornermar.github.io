@@ -14,7 +14,7 @@ export const Detail = () => {
 
   const { code, title, description, why, technology, image, url } = detailData;
 
-  const linkOnline = url ? url : `https://${code}.marketahajek.cz`;
+  const linkOnline = url ? url : `https://marketahajek.cz/${code}`;
 
   return (
     <div className="detail">
