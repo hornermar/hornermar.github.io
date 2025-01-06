@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import "./Projects.css";
 import { map } from "lodash";
-import { ProjectType } from "../../types/ProjectType";
+import { ProjectType, Note } from "../../types/ProjectType";
 import { projects } from "../../data/projects";
 
 type ProjectProps = {
@@ -22,15 +22,13 @@ const Project = ({ code, title, description, image, note }: ProjectProps) => {
           <img src={image} alt={title} />
         </Link>
       </div>
+
       <div className="project__text">
-        <h3>
-          <Link to={linkTo}>{title}</Link>
-        </h3>
-        {note && (
-          <span>
-            <i>{note}</i>
-          </span>
-        )}
+        <Link to={linkTo}>
+          <h3>{`➜ ${title}`}</h3>
+        </Link>
+
+        {note && note === Note.inProgress && <p>[{note}]</p>}
         <p>{description}</p>
       </div>
     </div>

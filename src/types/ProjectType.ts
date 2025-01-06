@@ -1,5 +1,10 @@
 import { ReactNode } from "react";
 
+export enum Note {
+  inProgress = "In progress",
+  done = "(Done)",
+}
+
 export type ProjectType = {
   code: string;
   title: string;
@@ -8,6 +13,6 @@ export type ProjectType = {
   why?: string;
   press?: string;
   technology?: ReactNode;
-  note?: string;
+  note?: Note;
   url?: string;
 };

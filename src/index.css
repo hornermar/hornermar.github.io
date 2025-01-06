@@ -1,7 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap");
 
 :root {
-  background-color: #dce1f8;
 }
 
 body {
@@ -11,6 +10,7 @@ body {
   margin: 0 auto;
   padding: 0 20px 20px 20px;
   font-size: 20px;
+  color: #44444a;
 }
 
 h2 {
@@ -29,5 +29,5 @@ h3 {
 
 a {
   text-decoration: none;
-  color: #0020c2;
+  color: #44444a;
 }

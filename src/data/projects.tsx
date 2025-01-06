@@ -1,7 +1,12 @@
-import { ProjectType } from "../types/ProjectType";
 import { Link } from "react-router-dom";
+
+import { ProjectType, Note } from "../types/ProjectType";
 import vymazSiPamatkuImage from "../assets/vymaz-si-pamatku-banner.png";
 import systemSykoraImage from "../assets/system-sykora-banner.png";
+
+export enum ProjectNote {
+  inProgress = "(In progress)",
+}
 
 export const projects: ProjectType[] = [
   {
@@ -16,12 +21,13 @@ export const projects: ProjectType[] = [
       </>
     ),
     image: vymazSiPamatkuImage,
+    note: Note.done,
   },
   {
     code: "system-sykora",
     title: "Systém Sýkora",
     description: "Vyzkoušej si algoritmus Zdeňka Sýkory a zjisti, jak funguje.",
     image: systemSykoraImage,
-    note: "(In Progress)",
+    note: Note.inProgress,
   },
 ];
