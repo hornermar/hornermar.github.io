@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { ProjectType, Note } from "../types/ProjectType";
 import vymazSiPamatkuImage from "../assets/vymaz-si-pamatku-banner.png";
 import systemSykoraImage from "../assets/system-sykora-banner.png";
+import dumVannyVenturioveImage from "../assets/dum-vanny-venturiove-banner.png";
 
 export enum ProjectNote {
   inProgress = "(In progress)",
@@ -21,6 +22,13 @@ export const projects: ProjectType[] = [
       </>
     ),
     image: vymazSiPamatkuImage,
+    note: Note.done,
+  },
+  {
+    code: "dum-vanny-venturiove",
+    title: "Dům Vanny Venturive",
+    description: "Jaký je příběh prvního postmoderního domu vůbec? To zjistíš.",
+    image: dumVannyVenturioveImage,
     note: Note.done,
   },
   {

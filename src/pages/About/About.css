@@ -2,6 +2,16 @@
   margin: 20px 0;
 }
 
-.about p {
+.about .link {
   margin: 0;
+}
+
+.about table {
+  margin-bottom: 20px;
+}
+
+.about table th {
+  text-align: left;
+  font-weight: normal;
+  width: 25%;
 }
