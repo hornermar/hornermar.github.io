@@ -11,6 +11,14 @@ export enum ProjectNote {
 
 export const projects: ProjectType[] = [
   {
+    code: "dum-vanny-venturiove",
+    title: "Dům Vanny Venturivé",
+    description:
+      "Chceš se dozvědět, jaký je příběh domu Vanny Venturiové? Mrkni a zjisti, proč je považovaný za ikonu postmoderny.",
+    image: dumVannyVenturioveImage,
+    note: Note.done,
+  },
+  {
     code: "vymaz-si-pamatku",
     title: "Vymaž si památku",
     description: "Užij si bourání památek. Aspoň na chvilku!",
@@ -22,13 +30,6 @@ export const projects: ProjectType[] = [
       </>
     ),
     image: vymazSiPamatkuImage,
-    note: Note.done,
-  },
-  {
-    code: "dum-vanny-venturiove",
-    title: "Dům Vanny Venturive",
-    description: "Jaký je příběh prvního postmoderního domu vůbec? To zjistíš.",
-    image: dumVannyVenturioveImage,
     note: Note.done,
   },
   {

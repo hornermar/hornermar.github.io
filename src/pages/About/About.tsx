@@ -16,13 +16,14 @@ export const About = () => {
           <td>Muzeum umění a designu Benešov | MUD</td>
         </tr>
       </table> */}
-
       <p className="link">
-        <Link to="https://www.instagram.com/marketa_hajek">➜ Instagram</Link>
+        ➜{" "}
+        <Link to="https://www.instagram.com/marketa_hajek">@marketa_hajek</Link>
       </p>
       <p className="link">
-        <Link to="mailto:hornerova.m@gmail.com">➜ Email</Link>
+        ➜ <Link to="https://github.com/hornermar">GitHub</Link>
       </p>
+      <p className="link">➜ hornerova.m@gmail.com</p>
     </div>
   );
 };
