@@ -4,12 +4,43 @@ import { ProjectType, Note } from "../types/ProjectType";
 import vymazSiPamatkuImage from "../assets/vymaz-si-pamatku-banner.png";
 import systemSykoraImage from "../assets/system-sykora-banner.png";
 import dumVannyVenturioveImage from "../assets/dum-vanny-venturiove-banner.png";
+import minyCernyImage from "../assets/miny-cerny-banner.png";
 
 export enum ProjectNote {
   inProgress = "(In progress)",
 }
 
 export const projects: ProjectType[] = [
+  {
+    code: "miny_cerny",
+    title: "miny_černý",
+    description:
+      "Praha bude brzo plná Černýho. Jeho díla se nekontrolovatelně objevují po celém městě. Nikdy nevíš, kde na ně narazíš... Princip hry kopíruje klasické hledání min: hráč odhaluje políčka v mřížce, čísla ukazují, kolik „min“ je v sousedství. Miny ale nečekej, v této variantě se snažíš zneškodnit díla Davida Černého.",
+    // why: "",
+    technology: (
+      <>
+        Hra miny_černý je vytvořena pomocí{" "}
+        <Link to="https://p5js.org/">p5.js</Link>. Použité písmo je{" "}
+        <Link to="https://fonts.google.com/specimen/Kode+Mono">Kode Mono</Link>.
+      </>
+    ),
+    image: minyCernyImage,
+    note: Note.inProgress,
+  },
+  {
+    code: "vymaz-si-pamatku",
+    title: "Vymaž si památku",
+    description: "Užij si bourání památek. Aspoň na chvilku!",
+    why: "Po zbourání Transgasu a hotelu Praha ve mně začala narůstat frustrace. Když se objevily zprávy, že má zmizet i železniční most a Chemapol, potřebovala jsem si v tom najít nějakou formu uspokojení. Tak z toho vznikla tahle hříčka. Tadá!",
+    technology: (
+      <>
+        Hra je napsaná v JavaScriptu. Použité písmo je{" "}
+        <Link to="https://fonts.google.com/specimen/Micro+5">Micro 5</Link>.
+      </>
+    ),
+    image: vymazSiPamatkuImage,
+    note: Note.done,
+  },
   {
     code: "dum-vanny-venturiove",
     title: "Dům Vanny Venturivé",
@@ -27,20 +58,6 @@ export const projects: ProjectType[] = [
       </>
     ),
     image: dumVannyVenturioveImage,
-    note: Note.done,
-  },
-  {
-    code: "vymaz-si-pamatku",
-    title: "Vymaž si památku",
-    description: "Užij si bourání památek. Aspoň na chvilku!",
-    why: "Po zbourání Transgasu a hotelu Praha ve mně začala narůstat frustrace. Když se objevily zprávy, že má zmizet i železniční most a Chemapol, potřebovala jsem si v tom najít nějakou formu uspokojení. Tak z toho vznikla tahle hříčka. Tadá!",
-    technology: (
-      <>
-        Hra je napsaná v JavaScriptu. Použité písmo je{" "}
-        <Link to="https://fonts.google.com/specimen/Micro+5">Micro 5</Link>.
-      </>
-    ),
-    image: vymazSiPamatkuImage,
     note: Note.done,
   },
   {

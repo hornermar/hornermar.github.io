@@ -26,7 +26,7 @@ export const Detail = () => {
         <h2>{title}</h2>
         {
           <Link to={linkOnline} reloadDocument className="online">
-            ➜ Online tady!
+            ➜ Online tady
           </Link>
         }
         <h3>Popis</h3>
@@ -38,9 +38,8 @@ export const Detail = () => {
         <h3>Dokumentace</h3>
         <ul>
           <li>
-            <Link to={`https://github.com/hornermar/${code}`}>
-              Zdrojový kód
-            </Link>
+            Podívej se na kód v{" "}
+            <Link to={`https://github.com/hornermar/${code}`}>repozitáři</Link>.
           </li>
         </ul>
       </div>
