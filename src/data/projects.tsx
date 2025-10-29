@@ -15,7 +15,7 @@ export const projects: ProjectType[] = [
     code: "miny_cerny",
     title: "miny_černý",
     description:
-      "Praha bude brzo plná Černýho. Jeho díla se nekontrolovatelně objevují po celém městě. Nikdy nevíš, kde na ně narazíš... Princip hry kopíruje klasické hledání min: hráč odhaluje políčka v mřížce, čísla ukazují, kolik „min“ je v sousedství. Miny ale nečekej, v této variantě se snažíš zneškodnit díla Davida Černého.",
+      "David Černý svými díly nezastavitelně plní Prahu. V posledních letech k tomu přispívají hlavně jeho spolupráce s developery. Výsledkem je dvacet osm děl rozesetých po městě – a přibývají další. Zvládneš Prahu odminovat dřív, než bude pozdě?",
     // why: "",
     technology: (
       <>
@@ -25,7 +25,7 @@ export const projects: ProjectType[] = [
       </>
     ),
     image: minyCernyImage,
-    note: Note.inProgress,
+    note: Note.done,
   },
   {
     code: "vymaz-si-pamatku",
