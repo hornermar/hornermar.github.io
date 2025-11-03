@@ -4,6 +4,7 @@ import { useParams } from "react-router-dom";
 import "./Detail.css";
 import { find } from "lodash";
 import { DetailNotFound } from "./DetailNotFound";
+import { Note } from "../../types/ProjectType";
 
 export const Detail = () => {
   const { project } = useParams<{ project: string }>();
@@ -12,7 +13,7 @@ export const Detail = () => {
 
   if (!detailData) return <DetailNotFound />;
 
-  const { code, title, description, why, technology, image, url } = detailData;
+  const { code, title, description, why, technology, image, url, note } = detailData;
 
   const linkOnline = url ? url : `https://marketahajek.cz/${code}`;
 
@@ -24,7 +25,7 @@ export const Detail = () => {
 
       <div className="detail__text">
         <h2>{title}</h2>
-        {
+        {note !== Note.inProgress &&
           <Link to={linkOnline} reloadDocument className="online">
             ➜ Online tady
           </Link>
